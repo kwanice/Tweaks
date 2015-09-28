@@ -1,2 +1,3 @@
 # Tweaks
-Update tweaks on Wptweak app
+I use the great app from sensboston
+Wanna update some tweaks
