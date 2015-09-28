@@ -31,7 +31,7 @@ namespace WPTweaker
         List<Tweak> _tweaks = new List<Tweak>();
         bool _isSamsung = false;
         int _rebootCounter = 0;
-        Uri _tweakListUri = new Uri("https://raw.githubusercontent.com/kwanice/Dev/master/Tweaks.xml");
+        Uri _tweakListUri = new Uri("https://raw.githubusercontent.com/kwanice/Tweaks/master/WPTweaker/Tweaks.xml");
         ThemeManager _themeManager = new ThemeManager();
 
         public MainPage()
