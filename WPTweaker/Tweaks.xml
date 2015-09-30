@@ -181,7 +181,7 @@
      </entry>
    </tweak>
 
- <tweak category="Buttons" name="Enable or Disable Led on Hardware Button" type="toggle">
+ <tweak category="Buttons" name="Disable Led on Hardware Button" type="toggle">
 	<entry path="HKLM\SOFTWARE\OEM\Nokia\Display\ColorAndLight" name="UserSettingKeyLightsEnabled" type="dword" default="1">
 	<value>0</value>
 	</entry>
