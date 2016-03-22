@@ -636,9 +636,6 @@
   <tweak category="Device Info" name="Phone Manufacturer" type="input" description="Change Phone Manufacturer">
     <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneManufacturer" type="string" />
   </tweak>
-  <tweak category="Device Info" name="Phone Manufacturer" type="input" description="Change Phone Manufacturer">
-    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneManufacturer" type="string" />
-  </tweak>
   <tweak category="Device Info" name="Phone Manufacturer Model Name" type="input" description="Change Phone Manufacturer Model Name">
     <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneManufacturerModelName" type="string" />
   </tweak>
