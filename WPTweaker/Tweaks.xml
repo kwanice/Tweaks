@@ -10,7 +10,7 @@
     <contributor>Pen4iK @ 4pda.ru</contributor>
   </contributors>
  
-  <tweak category="Wide Screen" name="Hack for 5 inches screen or less to have 5 actions buttons, like Nokia 1520" type="toggle" description="For All Type" comparer="==" reboot="true">
+  <tweak category="Wide Screen" name="Hack for 5 inches screen or less to have 5 actions buttons, like Nokia 1520" type="toggle" description="For All Type (switch Off and switch ON to apply)" comparer="==" reboot="true">
     <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneManufacturerModelName" type="string">
       <value>RM-938_1000</value>
     </entry>
@@ -20,7 +20,7 @@
    </tweak>
   <tweak category="Wide Screen" name="Revert Back - Nokia 5xx" type="enum" reboot="true">
     <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneManufacturerModelName" type="string">
-      <value name="Nokia 520_EU">RM-914</value>
+    <value name="Nokia 520_EU">RM-914</value>
 	  <value name="Nokia 520 USA">RM-915</value>
 	  <value name="Nokia 530 EU">RM-1017</value>
 	  <value name="Nokia 530">RM-1019</value>
@@ -59,7 +59,7 @@
   </tweak>	
   <tweak category="Wide Screen" name="Revert Back - Nokia 9xx" type="enum" reboot="true">
    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneManufacturerModelName" type="string">
-  	  <value name="Nokia 920 USA">RM-820</value>
+  	<value name="Nokia 920 USA">RM-820</value>
 	  <value name="Nokia 920 EU">RM-821</value>
 	  <value name="Nokia 920 CHINA">RM-822</value>
 	  <value name="Nokia 925 EU">RM-892</value>
@@ -627,31 +627,38 @@
     </entry>
   </tweak>
 
- <tweak category="Device Info" name="Battery Value" description="Do not write, just for information" type="input">
-	<entry path="HKLM\SOFTWARE\OEM\Nokia\Display" name="BatteryChargePercent" type="string" default=""/>
- </tweak>
- <tweak category="Device Info" name="Brightness Value" description="Do not write, just for information" type="input">
-	<entry path="HKLM\SOFTWARE\Microsoft\Autobrightness" name="ABSManualBrightness" type="string" default=""/>
- </tweak>
-  <tweak category="Device Info" name="Phone Manufacturer" type="input" description="Change Phone Manufacturer">
-    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneManufacturer" type="string" />
-  </tweak>
-  <tweak category="Device Info" name="Phone Manufacturer Model Name" type="input" description="Change Phone Manufacturer Model Name">
-    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneManufacturerModelName" type="string" />
-  </tweak>
-  <tweak category="Device Info" name="Phone Mobile Operator Name" type="input" description="Change Phone Mobile Operator Name">
-    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneMobileOperatorName" type="string" />
-  </tweak>
-  <tweak category="Device Info" name="Enable Dev OS Preview" description="Preview for Developers Enable toggle" type="toggle">
-    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="DevOSPreviewEnable" type="dword" default="0">
-      <value>1</value>
-    </entry>
-  </tweak>
-  <tweak category="Device Info" name="Phone Friendly Name" type="input" description="Change Phone Friendly Name">
-    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneFriendlyName" type="string" />
-  </tweak>
-  <tweak category="Device Info" name="Phone Mobile Operator Display Name" type="input" description="Change Phone Operator Display Name">
-    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneMobileOperatorDisplayName" type="string" />
-  </tweak>
 
+<tweak category="Device Info" name="Phone Hardware Variant" type="input" description="Change Phone Hardware Variant">
+    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneHardwareVariant" type="string" />
+</tweak>
+<tweak category="Device Info" name="Phone Manufacturer Model Name" type="input" description="Change Phone Manufacturer Model Name">
+    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneManufacturerModelName" type="string" />
+</tweak>
+<tweak category="Device Info" name="Phone Manufacturer" type="input" description="Change Phone Manufacturer">
+    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneManufacturer" type="string" />
+</tweak>
+<tweak category="Device Info" name="Phone Model Name" type="input" description="Change Phone Model Name">
+    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneModelName" type="string" />
+</tweak>
+<tweak category="Device Info" name="Phone Mobile Operator Name" type="input" description="Change Phone Mobile Operator Name">
+    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneMobileOperatorName" type="string" />
+</tweak>
+<tweak category="Device Info" name="Enable Dev OS Preview" description="Preview for Developers Enable toggle" type="toggle">
+    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="DevOSPreviewEnable" type="dword" default="0">
+    <value>1</value>
+    </entry>
+</tweak>
+<tweak category="Device Info" name="Phone Friendly Name" type="input" description="Change Phone Friendly Name">
+    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneFriendlyName" type="string" />
+</tweak>
+<tweak category="Device Info" name="Phone Mobile Operator Display Name" type="input" description="Change Phone Operator Display Name">
+    <entry path="HKLM\SYSTEM\Platform\DeviceTargetingInfo" name="PhoneMobileOperatorDisplayName" type="string" />
+</tweak>
+<tweak category="Device Info" name="Battery Value" description="Do not write, just for information" type="input">
+    <entry path="HKLM\SOFTWARE\OEM\Nokia\Display" name="BatteryChargePercent" type="string" default=""/>
+</tweak>
+<tweak category="Device Info" name="Brightness Value" description="Do not write, just for information" type="input">
+    <entry path="HKLM\SOFTWARE\Microsoft\Autobrightness" name="ABSManualBrightness" type="string" default=""/>
+</tweak>
+ 
 </tweaks>
